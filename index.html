@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+
+    <main>
+
+        <section class="Spalten">
+
+            <div class="Spalte To-Do">
+
+                <div class="Spalte-header">
+                    <h2>To-Do</h2>
+                    <p class="Button add To-Do" onclick="createTask(this)">+</p>
+                    <ul></ul>
+                </div>
+
+            </div>
+
+            <div class="Spalte In-Arbeit">
+
+                <div class="Spalte-header">
+                    <h2>In Progress</h2>
+                    <p class="Button add In-Arbeit" onclick="createTask(this)">+</p>
+                    <ul></ul>
+                </div>
+
+            </div>
+
+            <div class="Spalte Abgeschlossen">
+
+                <div class="Spalte-header">
+                    <h2>Done</h2>
+                    <p class="Button add Abgeschlossen" onclick="createTask(this)">+</p>
+                    <ul></ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="Input-Satz">
+        <input class="checkbox" type="checkbox">
+        <label class="checkbox-beschreibung"></label>
+    </div>
+
+    <div id="Add-Task">
+        <div class="Add-Task-Header">
+            <h3>Add  Task</h3>
+            <p id="exit" class="Button" onclick="exit()">X</p>
+        </div>
+        <form id="form">
+            <input id="Task-Name" type="text" placeholder="Add Name" required>
+            <div id="Aufgabe-Checkbox">
+                <div id="Erste-Input">
+                    <input class="Aufgabe" type="text" placeholder="Add Element">
+                    <p id="Plus-Aufgabe" class="Button" onclick="addAufgabeFeld()">+</p>
+                </div>
+            </div>
+            <input id="Submit" type="submit" value="Create Task">
+        </form>
+    </div>
+
+    <div class="Task-Muster">
+        <div class="Task-Header">
+            <h3 class="name"></h3>
+            <select class="select" onchange="changeColumn(this)" name="options">
+                <option value="">Move Task</option>
+                <option value="To-Do">To-Do</option>
+                <option value="In-Arbeit">In Progress</option>
+                <option value="Abgeschlossen">Done</option>
+            </select>
+            <p class="Button delete" onclick="deleteTask(this)">X</p>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>

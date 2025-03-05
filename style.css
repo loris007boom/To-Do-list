@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: bisque;
+    text-align: center;
+}
+
+header{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+main{
+    margin-top: 1.5rem;
+}
+
+.Spalten{
+    display: flex;
+    justify-content: space-around;
+    height: 60rem;
+    margin: 1rem;
+}
+
+.Spalte{
+    background-color: #DDE3E7;
+    width: 30%;
+    height: 100%;
+}
+
+.Spalte-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.8rem;
+    border-bottom: 0.5rem solid black;
+}
+
+.add{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#Add-Task{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 10rem;
+    bottom: 10rem;
+    left: 30%;
+    z-index: 10;
+    background-color: white;
+    width: 40%;
+    height: 60%;
+}
+
+.Add-Task-Header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Task-Header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#exit{
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#Submit:hover{
+    cursor: pointer;
+}
+
+.Task-Muster, .New-Task{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    border: 0.2rem solid black;
+    border-radius: 5%;
+    margin: 0.5rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+input{
+    margin: 0.2rem;
+}
+
+#Aufgabe-Checkbox{
+    display: flex;
+    flex-direction: column;
+}
+
+#Erste-Input{
+    display: flex;
+}
+
+#Plus-Aufgabe{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Aufgabe, #Task-Name, #Submit{
+    width: 100%;
+}
+
+.Aufgabe, #Task-Name{
+    height: 2rem;
+}
+
+.Input-Satz, .New-Input-Satz{
+    display: none;
+}
